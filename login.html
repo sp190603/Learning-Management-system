@@ -1,497 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Times+New+Roman&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Abyssinica+SIL&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
+	<meta charset="UTF-8">
+	<title>Login Page in HTML with CSS Code Example</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<style>
+		body {
+			background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: "Open Sans", sans-serif;
+			color: #333333;
+		}
+
+		.box-form {
+			margin: 0 auto;
+			width: 80%;
+			background: #FFFFFF;
+			border-radius: 10px;
+			overflow: hidden;
+			display: flex;
+			flex: 1 1 100%;
+			align-items: stretch;
+			justify-content: space-between;
+			box-shadow: 0 0 20px 6px #090b6f85;
+		}
+
+		@media (max-width: 980px) {
+			.box-form {
+				flex-flow: wrap;
+				text-align: center;
+				align-content: center;
+				align-items: center;
+			}
+		}
+
+		.box-form div {
+			height: auto;
+		}
+
+		.box-form .left {
+			color: #FFFFFF;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url("https://i.pinimg.com/736x/5d/73/ea/5d73eaabb25e3805de1f8cdea7df4a42--tumblr-backgrounds-iphone-phone-wallpapers-iphone-wallaper-tumblr.jpg");
+			overflow: hidden;
+		}
+
+		.box-form .left .overlay {
+			padding: 30px;
+			width: 100%;
+			height: 100%;
+			background: #5961f9ad;
+			overflow: hidden;
+			box-sizing: border-box;
+		}
+
+		.box-form .left .overlay h3 {
+			font-size: 7vmax;
+			line-height: 1;
+			font-weight: 900;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+
+		.box-form .left .overlay span p {
+			margin-top: 30px;
+			font-weight: 900;
+		}
+
+		.box-form .left .overlay span a {
+			background: #3b5998;
+			color: #FFFFFF;
+			margin-top: 10px;
+			padding: 14px 50px;
+			border-radius: 100px;
+			display: inline-block;
+			box-shadow: 0 3px 6px 1px #042d4657;
+		}
+
+		.box-form .left .overlay span a:last-child {
+			background: #1dcaff;
+			margin-left: 30px;
+		}
+
+		.box-form .right {
+			padding: 40px;
+			overflow: hidden;
+		}
+
+		@media (max-width: 980px) {
+			.box-form .right {
+				width: 100%;
+			}
+		}
+
+		.box-form .right h5 {
+			font-size: 6vmax;
+			line-height: 0;
+		}
+
+		.box-form .right p {
+			font-size: 14px;
+			color: #B0B3B9;
+		}
+
+		.box-form .right .inputs {
+			overflow: hidden;
+		}
+
+		.box-form .right input {
+			width: 100%;
+			padding: 10px;
+			margin-top: 25px;
+			font-size: 16px;
+			border: none;
+			outline: none;
+			border-bottom: 2px solid #B0B3B9;
+		}
+
+		.box-form .right button {
+			float: right;
+			color: #fff;
+			font-size: 16px;
+			padding: 12px 35px;
+			border-radius: 50px;
+			display: inline-block;
+			border: 0;
+			outline: 0;
+			box-shadow: 0px 4px 20px 0px #49c628a6;
+			background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+		}
+
+		label {
+			display: block;
+			position: relative;
+			margin-left: 30px;
+		}
+
+		label::before {
+			content: ' \f00c';
+			position: absolute;
+			font-family: FontAwesome;
+			background: transparent;
+			border: 3px solid #70F570;
+			border-radius: 4px;
+			color: transparent;
+			left: -30px;
+			transition: all 0.2s linear;
+		}
+
+		label:hover::before {
+			font-family: FontAwesome;
+			content: ' \f00c';
+			color: #fff;
+			cursor: pointer;
+			background: #70F570;
+		}
+
+		label:hover::before .text-checkbox {
+			background: #70F570;
+		}
+
+		label span.text-checkbox {
+			display: inline-block;
+			height: auto;
+			position: relative;
+			cursor: pointer;
+			transition: all 0.2s linear;
+		}
+
+		label input[type="checkbox"] {
+			display: none;
+		}
+	</style>
+
+
 </head>
 
 <body>
-    <div class="v2_117">
-        <div class="v7_163">
-            <div class="v7_164"></div>
-            <div class="v7_165"></div>
-            <div class="v7_166"></div>
-            <div class="v7_167">
-                <div class="v7_168"></div>
-                <div class="v7_169"></div>
-            </div><span class="v7_170">what would you want to learn ?</span><span class="v7_171">for
-                enterprise</span><span class="v7_172">students</span><span class="v7_173">For University</span>
-            <div class="v7_174">
-                <div class="v7_175">
-                    <div class="v7_176"></div>
-                </div>
-            </div>
-            <div class="name"></div>
-        </div>
-        <div class="v4_60"></div>
-        <div class="v4_122">
-            <div class="v1_54">
-                <div class="v1_55"></div><span class="v1_56">Login</span>
-            </div>
-            <!-- <div class="v1_57"><span class="v1_58">Recover Password ?</span></div> -->
-            <div class="name"></div>
-            <div class="name"></div>
-        </div>
-        <div class="v4_49">
-            <div class="v4_50"></div><span class="v4_51">We collaborate with 200+ leading universities and companies
-            </span>
-            <div class="v4_52"></div>
-            <div class="v4_53"></div>
-            <div class="v4_54"></div>
-            <div class="v4_55"></div>
-            <div class="v4_56"></div>
-            <div class="v4_57"></div>
-            <div class="v4_58"></div>
-            <div class="v4_59"></div>
-        </div>
-    </div>
+	<!-- partial:index.partial.html -->
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h3>Ganpat E-learning Platform</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur et est sed felis aliquet sollicitudin</p>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5>Login</h5>
+			<p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+			<div class="inputs">
+				<input type="text" placeholder="user name">
+				<br>
+				<input type="password" placeholder="password">
+			</div>
+
+			<br><br>
+			<br>
+			<button>Login</button>
+		</div>
+
+	</div>
+	<!-- partial -->
+
 </body>
 
-</html> <br /><br />
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    .v2_117 {
-        width: 100%;
-        height: 1024px;
-        background: rgba(20, 22, 46, 1);
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .v7_163 {
-        width: 100%;
-        height: 79px;
-        background: url("../images/face.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .v7_164 {
-        width: 100%;
-        height: 79px;
-        background: rgba(255, 255, 255, 1);
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        border: 1px solid rgba(224, 224, 224, 1);
-        overflow: hidden;
-    }
-
-    .v7_165 {
-        width: 320px;
-        height: 48px;
-        background: rgba(255, 253, 253, 1);
-        opacity: 1;
-        position: absolute;
-        top: 13px;
-        left: 102px;
-        border: 1px solid rgba(189, 189, 189, 1);
-        overflow: hidden;
-    }
-
-    .v7_166 {
-        width: 48px;
-        height: 48px;
-        background: rgba(20, 22, 46, 1);
-        opacity: 1;
-        position: absolute;
-        top: 13px;
-        left: 374px;
-        overflow: hidden;
-    }
-
-    .v7_167 {
-        width: 21px;
-        height: 21px;
-        background: rgba(255, 255, 255, 1);
-        opacity: 1;
-        position: absolute;
-        top: 27px;
-        left: 388px;
-        overflow: hidden;
-    }
-
-
-
-
-    .v7_170 {
-        width: 194px;
-        color: rgba(130, 130, 130, 1);
-        position: absolute;
-        top: 29px;
-        left: 135px;
-        font-family: Roboto;
-        font-weight: Regular;
-        font-size: 14px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .v7_171 {
-        width: 89px;
-        color: rgba(130, 130, 130, 1);
-        position: absolute;
-        top: 31px;
-        left: 1024px;
-        font-family: Roboto;
-        font-weight: Bold;
-        font-size: 14px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .v7_172 {
-        width: 57px;
-        color: rgba(130, 130, 130, 1);
-        position: absolute;
-        top: 31px;
-        left: 1137px;
-        font-family: Roboto;
-        font-weight: Bold;
-        font-size: 14px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .v7_173 {
-        width: 88px;
-        color: rgba(130, 130, 130, 1);
-        position: absolute;
-        top: 31px;
-        left: 1209px;
-        font-family: Roboto;
-        font-weight: Bold;
-        font-size: 14px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .v7_174 {
-        width: 88px;
-        height: 69px;
-        background: url("../images/face.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-
-    }
-
-    .v7_175 {
-        width: 88px;
-        height: 69px;
-        background: url("../images/face.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .v7_176 {
-        width: 88px;
-        height: 69px;
-        background: rgba(47, 176, 114, 1);
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
-
-    .name {
-        color: #fff;
-    }
-
-    .v4_60 {
-        width: 471px;
-        height: 330px;
-        background: url("../images/logindeco.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 244px;
-        left: 50px;
-        overflow: hidden;
-    }
-
-    .v4_122 {
-        width: 604px;
-        height: 563px;
-        background: url("../images/v4_122.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 167px;
-        left: 759px;
-        overflow: hidden;
-    }
-
-    .v1_54 {
-        width: 406px;
-        height: 88px;
-        background: url("../images/v1_54.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 242px;
-        left: 94px;
-        overflow: hidden;
-    }
-
-    .v1_55 {
-        width: 406px;
-        height: 68px;
-        background: rgba(68, 97, 242, 1);
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        box-shadow: 0px 12px 21px rgba(0.2666666805744171, 0.3803921639919281, 0.9490196108818054, 0.15000000596046448);
-        overflow: hidden;
-    }
-
-    .v1_56 {
-        width: 104px;
-        color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 15px;
-        left: 169px;
-        font-family: Times New Roman;
-        font-weight: Bold;
-        font-size: 25px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .v1_57 {
-        width: 225px;
-        height: 89px;
-        background: url("../images/v1_57.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 151px;
-        left: 379px;
-        overflow: hidden;
-    }
-
-    .v1_58 {
-        width: 225px;
-        color: rgba(199, 199, 199, 1);
-        position: relative;
-        top: 0px;
-        left: 0px;
-        font-family: Abyssinica SIL;
-        font-weight: Regular;
-        font-size: 14px;
-        opacity: 1;
-        text-align: left;
-    }
-
-
-
-    .name {
-        color: #fff;
-    }
-
-    .name {
-        color: #fff;
-    }
-
-
-    .name {
-        color: #fff;
-    }
-
-    .name {
-        color: #fff;
-    }
-
-    .v4_49 {
-        width: 100%;
-        height: 217px;
-        background: url("../images/v4_49.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 807px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .v4_50 {
-        width: 100%;
-        height: 217px;
-        background: rgba(234, 235, 249, 1);
-        opacity: 1;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .v4_51 {
-        width: 815px;
-        color: url("../images/v4_51.png");
-        position: absolute;
-        top: 61px;
-        left: 313px;
-        font-family: Arial;
-        font-weight: Regular;
-        font-size: 28px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .v4_52 {
-        width: 156px;
-        height: 27px;
-        background: url("../images/illinoisicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 131px;
-        left: 130px;
-        overflow: hidden;
-    }
-
-    .v4_53 {
-        width: 93px;
-        height: 27px;
-        background: url("../images/dukeicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 131px;
-        left: 329px;
-        overflow: hidden;
-    }
-
-    .v4_54 {
-        width: 108px;
-        height: 31px;
-        background: url("../images/googleicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 131px;
-        left: 465px;
-        overflow: hidden;
-    }
-
-    .v4_55 {
-        width: 52px;
-        height: 46px;
-        background: url("../images/umichicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 123px;
-        left: 616px;
-        overflow: hidden;
-    }
-
-    .v4_56 {
-        width: 80px;
-        height: 27px;
-        background: url("../images/ibmicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 134px;
-        left: 711px;
-        overflow: hidden;
-    }
-
-    .v4_57 {
-        width: 134px;
-        height: 29px;
-        background: url("../images/imperialicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 133px;
-        left: 834px;
-        overflow: hidden;
-    }
-
-    .v4_58 {
-        width: 126px;
-        height: 23px;
-        background: url("../images/stanfordicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 131px;
-        left: 998px;
-        overflow: hidden;
-    }
-
-    .v4_59 {
-        width: 112px;
-        height: 31px;
-        background: url("../images/pennicon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 131px;
-        left: 1162px;
-        overflow: hidden;
-    }
-</style>
+</html>

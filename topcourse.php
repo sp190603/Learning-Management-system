@@ -38,12 +38,7 @@
             <div class="name"></div>
         </div>
         <div class="v10_572"><span class="v10_573"></span>
-            <div class="name"></div>
-            <div class="name"></div>
-            <div class="name"></div>
-            <div class="name"></div>
-            <div class="name"></div>
-            <div class="name"></div>
+
             <div class="name"></div>
             <div class="name"></div><span class="v10_582"></span>
             <div class="v10_583">
@@ -87,7 +82,7 @@
     .v10_734 {
         width: 100%;
         height: 217px;
-        background: url("../images/v10_734.png");
+        background: url("images/v10_734.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -111,7 +106,7 @@
 
     .v10_736 {
         width: 815px;
-        color: url("../images/Coursessection.png");
+        color: url("images/Coursessection.png");
         position: absolute;
         top: 61px;
         left: 313px;
@@ -125,7 +120,7 @@
     .v10_737 {
         width: 156px;
         height: 27px;
-        background: url("../images/illinoisicon.png");
+        background: url("images/illinoisicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -139,7 +134,7 @@
     .v10_738 {
         width: 93px;
         height: 27px;
-        background: url("../images/dukeicon.png");
+        background: url("images/dukeicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -153,7 +148,7 @@
     .v10_739 {
         width: 108px;
         height: 31px;
-        background: url("../images/googleicon.png");
+        background: url("images/googleicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -167,7 +162,7 @@
     .v10_740 {
         width: 52px;
         height: 46px;
-        background: url("../images/umichicon.png");
+        background: url("images/umichicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -181,7 +176,7 @@
     .v10_741 {
         width: 80px;
         height: 27px;
-        background: url("../images/ibmicon.png");
+        background: url("images/ibmicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -195,7 +190,7 @@
     .v10_742 {
         width: 134px;
         height: 29px;
-        background: url("../images/imperialicon.png");
+        background: url("images/imperialicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -209,7 +204,7 @@
     .v10_743 {
         width: 126px;
         height: 23px;
-        background: url("../images/stanfordicon.png");
+        background: url("images/stanfordicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -223,7 +218,7 @@
     .v10_744 {
         width: 112px;
         height: 31px;
-        background: url("../images/pennicon.png");
+        background: url("images/pennicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -237,7 +232,7 @@
     .v10_745 {
         width: 100%;
         height: 79px;
-        background: url("../images/v10_745.png");
+        background: url("images/v10_745.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -297,7 +292,7 @@
     .v10_750 {
         width: 14px;
         height: 14px;
-        background: url("../images/v10_750.png");
+        background: url("images/v10_750.png");
         opacity: 1;
         position: absolute;
         top: 2px;
@@ -308,7 +303,7 @@
     .v10_751 {
         width: 3px;
         height: 3px;
-        background: url("../images/v10_751.png");
+        background: url("images/v10_751.png");
         opacity: 1;
         position: absolute;
         top: 14px;
@@ -371,7 +366,7 @@
     .v10_756 {
         width: 88px;
         height: 79px;
-        background: url("../images/v10_756.png");
+        background: url("images/v10_756.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -385,7 +380,7 @@
     .v10_757 {
         width: 88px;
         height: 79px;
-        background: url("../images/v10_757.png");
+        background: url("images/v10_757.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -413,7 +408,7 @@
     .v10_572 {
         width: 100%;
         height: 730px;
-        background: url("../images/Coursessection.png");
+        background: url("images/Coursessection.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -426,7 +421,7 @@
 
     .v10_573 {
         width: 577px;
-        color: url("../images/v10_573.png");
+        color: url("images/v10_573.png");
         position: relative;
         top: 0px;
         left: 0px;
@@ -485,7 +480,7 @@
     .v10_583 {
         width: 292px;
         height: 21px;
-        background: url("../images/v10_583.png");
+        background: url("images/v10_583.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -500,7 +495,7 @@
     .v10_584 {
         width: 27px;
         height: 41px;
-        background: url("../images/v10_584.png");
+        background: url("images/v10_584.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -617,7 +612,7 @@
     .v10_593 {
         width: 27px;
         height: 41px;
-        background: url("../images/v10_593.png");
+        background: url("images/v10_593.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -643,7 +638,7 @@
     .v10_1302 {
         width: 41px;
         height: 27px;
-        background: url("../images/v10_1302.png");
+        background: url("images/v10_1302.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -657,7 +652,7 @@
     .v10_1303 {
         width: 27px;
         height: 41px;
-        background: url("../images/v10_1303.png");
+        background: url("images/v10_1303.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

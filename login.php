@@ -1,9 +1,32 @@
+<?php
+include 'dbconnect.php';
+$showAlert = false;
+$showError = false;
+$exists = false;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $sql = "select * from login where username = '$username' and password = '$password'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $count = mysqli_num_rows($result);
+
+    if ($count == 1) {
+        echo "<h1><center> Login successful </center></h1>";
+		include "topcourse.php";
+    } else {
+        echo "<h1> Login failed. Invalid username or password.</h1>";
+    }
+}
+?>  
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Login Page in HTML with CSS Code Example</title>
+	<title>Login</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
@@ -67,7 +90,7 @@
 			font-size: 7vmax;
 			line-height: 1;
 			font-weight: 900;
-			margin-top: 40px;
+			margin-top: 120px;
 			margin-bottom: 20px;
 		}
 
@@ -190,26 +213,26 @@
 	<div class="box-form">
 		<div class="left">
 			<div class="overlay">
-				<h3>Ganpat E-learning Platform</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Curabitur et est sed felis aliquet sollicitudin</p>
+				<h3>Ganpat<br>E-learning Platform</h3>
+
 			</div>
 		</div>
 
-
+        <form action="" method="post">
 		<div class="right">
 			<h5>Login</h5>
-			<p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+			<p>Don't have an account? <a href="signup.php">Creat Your Account</a> it takes less than a minute</p>
 			<div class="inputs">
-				<input type="text" placeholder="user name">
+				<input type="text" id="username" name="username" placeholder="username">
 				<br>
-				<input type="password" placeholder="password">
+				<input type="password" id="password" name="password" placeholder="Password">
 			</div>
 
 			<br><br>
 			<br>
-			<button>Login</button>
+			<button type="submit" id="button">Login</button>
 		</div>
+		</form>
 
 	</div>
 	<!-- partial -->

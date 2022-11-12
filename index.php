@@ -76,7 +76,7 @@
     .hdiv16 {
         width: 100%;
         height: 79px;
-        background: url("../logo.png");
+        background: url("logo.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -136,7 +136,7 @@
     .hdiv27 {
         width: 14px;
         height: 14px;
-        background: url("../images/logo.png");
+        background: url("images/logo.png");
         opacity: 1;
         position: absolute;
         top: 2px;
@@ -147,7 +147,7 @@
     .hdiv28 {
         width: 3px;
         height: 3px;
-        background: url("../images/hdiv28.png");
+        background: url("images/hdiv28.png");
         opacity: 1;
         position: absolute;
         top: 14px;
@@ -173,7 +173,7 @@
         color: rgba(130, 130, 130, 1);
         position: absolute;
         top: 31px;
-        left: 1150px;
+        left: 1075px;
         font-family: Roboto;
         font-weight: Bold;
         font-size: 14px;
@@ -186,7 +186,7 @@
         color: rgba(130, 130, 130, 1);
         position: absolute;
         top: 31px;
-        left: 1065px;
+        left: 1005px;
         font-family: Roboto;
         font-weight: Bold;
         font-size: 14px;
@@ -199,7 +199,7 @@
         color: rgba(130, 130, 130, 1);
         position: absolute;
         top: 31px;
-        left: 950px;
+        left: 900px;
         font-family: Roboto;
         font-weight: Bold;
         font-size: 14px;
@@ -210,7 +210,7 @@
     .hdiv33 {
         width: 100px;
         height: 48px;
-        background: url("../images/hdiv33.png");
+        background: url("images/hdiv33.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -248,7 +248,7 @@
     .v8_86 {
         width: 88px;
         height: 79px;
-        background: url("../images/v8_86.png");
+        background: url("images/v8_86.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -262,7 +262,7 @@
     .v8_87 {
         width: 88px;
         height: 79px;
-        background: url("../images/v8_87.png");
+        background: url("images/v8_87.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -286,7 +286,7 @@
     .v1_53 {
         width: 100%;
         height: 819px;
-        background: url("../images/v1_53.png");
+        background: url("images/v1_53.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -300,7 +300,7 @@
     .mdiv14 {
         width: 100%;
         height: 348px;
-        background: url("../images/mdiv14.png");
+        background: url("images/mdiv14.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -314,7 +314,7 @@
     .fdiv8 {
         width: 100%;
         height: 217px;
-        background: url("../images/fdiv8.png");
+        background: url("images/fdiv8.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -338,7 +338,7 @@
 
     .div0 {
         width: 815px;
-        color: url("../images/div0.png");
+        color: url("images/div0.png");
         position: absolute;
         top: 61px;
         left: 313px;
@@ -352,7 +352,7 @@
     .div1 {
         width: 156px;
         height: 27px;
-        background: url("../images/illinoisicon.png");
+        background: url("images/illinoisicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -366,7 +366,7 @@
     .div2 {
         width: 93px;
         height: 27px;
-        background: url("../images/dukeicon.png");
+        background: url("images/dukeicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -380,7 +380,7 @@
     .div3 {
         width: 108px;
         height: 31px;
-        background: url("../images/googleicon.png");
+        background: url("images/googleicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -394,7 +394,7 @@
     .div4 {
         width: 52px;
         height: 46px;
-        background: url("../images/umichicon.png");
+        background: url("images/umichicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -408,7 +408,7 @@
     .div5 {
         width: 80px;
         height: 27px;
-        background: url("../images/ibmicon.png");
+        background: url("images/ibmicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -422,7 +422,7 @@
     .div6 {
         width: 134px;
         height: 29px;
-        background: url("../images/imperialicon.png");
+        background: url("images/imperialicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -436,7 +436,7 @@
     .div7 {
         width: 126px;
         height: 23px;
-        background: url("../images/stanfordicon.png");
+        background: url("images/stanfordicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -450,7 +450,7 @@
     .div8 {
         width: 112px;
         height: 31px;
-        background: url("../images/pennicon.png");
+        background: url("images/pennicon.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -514,7 +514,7 @@
     .fdiv {
         width: 581px;
         height: 533px;
-        background: url("../images/outcomes.png");
+        background: url("images/outcomes.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
